@@ -4,7 +4,7 @@ compounds = [
     ["Compound_B", 923.1, 4.5, 2],  
     ["Compound_C", 710.2, 7.8, 1],  
     ["Compound_D", 150.8, 8.2, 2],  
-    ["Compound_E", 480.0, 0.5, 8소여]   
+    ["Compound_E", 480.0, 0.5, 8]   
 ]
 
 
