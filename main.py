@@ -14,7 +14,7 @@ def check_lipinski(compound):
     logp = compound[2]    
     donor = compound[3]   
     
-    if mw <= 500 and logp <= 5 and _donor<=5:
+    if mw <= 500 and logp <= 5 and donor<=5:
         return "SUCCESS"
     else:
         return "FAIL" 
@@ -30,7 +30,10 @@ def filter_safe_compounds(data_list):
             print(f"- {name}: 분자량 {compound[1]}, 지용성 {compound[2]}, 도너 {compound[3]}")
             pass_count = pass_count + 1 
             
+            
     
 
     if pass_count == 0:
         print("모든 후보 물질이 탈락했습니다.")
+if __name__ == "__main__":
+    filter_safe_compounds(compounds)
